@@ -41,7 +41,7 @@
   border-bottom: none;
   color: var(--ad_accent);
 }
-.heading .fas, .heading .far {
+.heading .fa, .heading .fas, .heading .far {
   position: relative;
   top: 15px;
   width: 100px;
@@ -98,7 +98,7 @@
     font-size: 24px;
     line-height: 36px;
   }
-  .heading .fas, .heading .far {
+  .heading .fa, .heading .fas, .heading .far {
     width: 80px;
     font-size: 50px;
     margin-right: 25px;
@@ -125,7 +125,7 @@
     font-size: 22px;
     line-height: 32px;
   }
-  .heading .fas, .heading .far {
+  .heading .fa, .heading .fas, .heading .far {
     display: none;
   }
   .subheading{
@@ -616,6 +616,69 @@
   .FAQ .question h3 {
     font-size: 16px;
   }
+}
+
+.past-alumni-days {
+  padding: 50px var(--page-margin) 100px;
+}
+.past-alumni-days .carousel {
+  /* TODO: Annabel's carousel code */
+  height: 300px;
+}
+.past-alumni-days .carousel-desc {
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px 75px;
+}
+.past-alumni-days .carousel-desc .year {
+  margin-right: 35px;
+  font-family: Futura, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--dark);
+  text-shadow: 3px 3px 5px var(--shadow-darker);
+}
+
+.past-alumni-days .past-alumni-wrapper {
+  padding: 50px;
+  background-color: var(--light);
+}
+.past-alumni-days .past-alumni-wrapper .subheading {
+  margin-bottom: 25px;
+}
+.past-alumni-days .past-alumni-wrapper .past-alumni {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -50px -25px 0;
+}
+.past-alumni-days .past-alumni .alumni {
+  margin: 0 50px 25px 0;
+  width: calc(0.25 * (100vw - 2 * var(--page-margin) - 250px));
+}
+.past-alumni-days .past-alumni .alumni .alumni-portrait {
+  margin-bottom: 10px;
+  background-color: var(--dark);
+}
+.past-alumni-days .past-alumni .alumni .alumni-portrait::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+.past-alumni-days .past-alumni .alumni .alumni-name {
+  text-align: center;
+  color: var(--dark);
+  font-family: SemplicitaPro, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.past-alumni-days .past-alumni .alumni .alumni-title, .past-alumni-days .past-alumni .alumni .alumni-company {
+  text-align: center;
+  color: var(--midtone);
+  font-family: SemplicitaPro, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .modal {
